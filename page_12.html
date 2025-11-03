@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Quando Você Diz &#34;Eu Te Amo&#34;</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 720px; overflow: hidden; font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 720px;
+            position: relative;
+            
+        }
+        .pulse-effect {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+        .float-effect {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .heart-beat {
+            animation: heartBeat 1.5s infinite;
+        }
+        @keyframes heartBeat {
+            0% {
+                transform: scale(1);
+            }
+            14% {
+                transform: scale(1.2);
+            }
+            28% {
+                transform: scale(1);
+            }
+            42% {
+                transform: scale(1.2);
+            }
+            70% {
+                transform: scale(1);
+            }
+        }
+    
+html {
+    overflow: hidden;
+}</style>
+</head>
+<body>
+<div class="slide bg-gradient-to-br from-pink-100 to-red-200 flex flex-col items-center justify-start p-12" style=" overflow: hidden;">
+<a href="page_11.html" class="absolute top-1/2 -translate-y-1/2 left-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+    <i class="fas fa-chevron-left"></i>
+</a>
+<a href="page_13.html" class="absolute top-1/2 -translate-y-1/2 right-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+    <i class="fas fa-chevron-right"></i>
+</a>
+<div class="w-full text-center mb-8">
+<h1 class="text-5xl font-bold text-red-600 tracking-wider">Quando Você Diz &#34;Eu Te Amo&#34;</h1>
+<div class="w-32 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
+</div>
+<div class="flex flex-col items-center justify-center w-full">
+<div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-lg w-3/5 text-center mb-10 pulse-effect">
+<p class="text-3xl font-light text-gray-800 italic">
+                    &#34;Eu te amo&#34;
+                </p>
+<div class="w-16 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
+</div>
+<div class="grid grid-cols-2 gap-8 w-4/5">
+<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start float-effect">
+<i class="fas fa-smile-beam text-pink-500 text-2xl mr-4 mt-1"></i>
+<p class="text-xl text-gray-700">
+                        Faz com que eu me sinta bem
+                    </p>
+</div>
+<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start float-effect">
+<i class="fas fa-heart text-pink-500 text-2xl mr-4 mt-1"></i>
+<p class="text-xl text-gray-700">
+                        Meu coração acelera
+                    </p>
+</div>
+<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start float-effect">
+<i class="fas fa-sun text-pink-500 text-2xl mr-4 mt-1"></i>
+<p class="text-xl text-gray-700">
+                        Ilumina meu dia
+                    </p>
+</div>
+<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start float-effect">
+<i class="fas fa-home text-pink-500 text-2xl mr-4 mt-1"></i>
+<p class="text-xl text-gray-700">
+                        Me faz sentir em casa
+                    </p>
+</div>
+</div>
+<div class="mt-10 flex items-center justify-center">
+<div class="text-pink-500 text-5xl heart-beat mr-4">
+<i class="fas fa-heart"></i>
+</div>
+<p class="text-2xl font-light text-gray-700">
+                    É o que mais me faz feliz
+                </p>
+</div>
+</div>
+<div class="absolute bottom-6 right-10 text-gray-600">
+<p>12 / 14</p>
+</div>
+</div>
+
+</body></html>
