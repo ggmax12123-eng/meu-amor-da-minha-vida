@@ -1,23 +1,35 @@
-<!DOCTYPE html><html lang="pt"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Seu Sorriso Ilumina Meu Mundo</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script><style>
-        body {width: 1280px; min-height: 720px; overflow: hidden; font-family: 'Montserrat', sans-serif;
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Seu Sorriso Ilumina Meu Mundo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* REMOVIDO: width: 1280px; */
+            /* MUDADO: min-height: 720px; para 100vh */
+            min-height: 100vh;
+            /* REMOVIDO: overflow: hidden; */
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 0;}
-        .slide {
-            width: 1280px;
-            min-height: 720px;
-            position: relative;
-            
+            padding: 0;
         }
+
+        .slide {
+            /* MUDADO: width: 1280px; para 100% */
+            width: 100%;
+            /* MUDADO: min-height: 720px; para 100vh */
+            min-height: 100vh;
+            position: relative;
+        }
+
         .shine-effect {
             position: relative;
-            
         }
+
         .shine-effect::after {
             content: '';
             position: absolute;
@@ -25,102 +37,113 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
             transform: rotate(30deg);
             animation: shine 4s infinite;
         }
+
         @keyframes shine {
             0% {
                 transform: rotate(30deg) translateX(-300%);
             }
+
             100% {
                 transform: rotate(30deg) translateX(300%);
             }
         }
+
         .heart-beat {
             animation: heartBeat 1.5s infinite;
         }
+
         @keyframes heartBeat {
             0% {
                 transform: scale(1);
             }
+
             14% {
                 transform: scale(1.2);
             }
+
             28% {
                 transform: scale(1);
             }
+
             42% {
                 transform: scale(1.2);
             }
+
             70% {
                 transform: scale(1);
             }
         }
-    
-html {
-    overflow: hidden;
-}</style>
+
+        html {
+            /* REMOVIDO: overflow: hidden; */
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide bg-gradient-to-br from-pink-100 to-red-200 flex flex-col items-center justify-start p-12" style=" overflow: hidden;">
-<a href="page_1.html" class="absolute top-1/2 -translate-y-1/2 left-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
-    <i class="fas fa-chevron-left"></i>
-</a>
-<a href="page_3.html" class="absolute top-1/2 -translate-y-1/2 right-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
-    <i class="fas fa-chevron-right"></i>
-</a>
-<div class="w-full text-center mb-10">
-<h1 class="text-5xl font-bold text-red-600 tracking-wider">Seu Sorriso Ilumina Meu Mundo</h1>
-<div class="w-32 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
-</div>
-<div class="flex flex-col items-center justify-center w-full">
-<div class="flex justify-center items-center mb-10 space-x-16">
-<div class="text-yellow-400 text-6xl shine-effect">
-<i class="fas fa-sun"></i>
-</div>
-<div class="text-pink-500 text-6xl heart-beat">
-<i class="fas fa-heart"></i>
-</div>
-<div class="text-yellow-400 text-6xl shine-effect">
-<i class="fas fa-star"></i>
-</div>
-</div>
-<div class="bg-white bg-opacity-70 rounded-xl p-10 shadow-lg w-3/4 text-center mb-10">
-<p class="text-3xl font-light text-gray-800 italic">
+    <div class="slide bg-gradient-to-br from-pink-100 to-red-200 flex flex-col items-center justify-start p-12">
+        <a href="index.html" class="absolute top-1/2 -translate-y-1/2 left-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page_3.html" class="absolute top-1/2 -translate-y-1/2 right-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+        <div class="w-full text-center mb-10">
+            <h1 class="text-5xl font-bold text-red-600 tracking-wider">Seu Sorriso Ilumina Meu Mundo</h1>
+            <div class="w-32 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="flex justify-center items-center mb-10 space-x-16">
+                <div class="text-yellow-400 text-6xl shine-effect">
+                    <i class="fas fa-sun"></i>
+                </div>
+                <div class="text-pink-500 text-6xl heart-beat">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <div class="text-yellow-400 text-6xl shine-effect">
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-70 rounded-xl p-10 shadow-lg w-3/4 text-center mb-10">
+                <p class="text-3xl font-light text-gray-800 italic">
                     &#34;Seu sorriso é mais lindo que existe, ele faz esquecer o mundo.&#34;
                 </p>
-</div>
-<div class="grid grid-cols-2 gap-8 w-4/5">
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
-<i class="fas fa-magic text-pink-500 text-2xl mr-4 mt-1"></i>
-<p class="text-xl text-gray-700">
+            </div>
+            <div class="grid grid-cols-2 gap-8 w-4/5">
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
+                    <i class="fas fa-magic text-pink-500 text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl text-gray-700">
                         Como um feitiço, seu sorriso transforma meu dia
                     </p>
-</div>
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
-<i class="fas fa-brain text-pink-500 text-2xl mr-4 mt-1"></i>
-<p class="text-xl text-gray-700">
+                </div>
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
+                    <i class="fas fa-brain text-pink-500 text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl text-gray-700">
                         Faz com que eu esqueça de tudo ao redor
                     </p>
-</div>
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
-<i class="fas fa-lightbulb text-pink-500 text-2xl mr-4 mt-1"></i>
-<p class="text-xl text-gray-700">
+                </div>
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
+                    <i class="fas fa-lightbulb text-pink-500 text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl text-gray-700">
                         Ilumina meu mundo com sua beleza
                     </p>
-</div>
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
-<i class="fas fa-heart text-pink-500 text-2xl mr-4 mt-1"></i>
-<p class="text-xl text-gray-700">
+                </div>
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex items-start">
+                    <i class="fas fa-heart text-pink-500 text-2xl mr-4 mt-1"></i>
+                    <p class="text-xl text-gray-700">
                         É o que mais me faz feliz
                     </p>
-</div>
-</div>
-</div>
-<div class="absolute bottom-6 right-10 text-gray-600">
-<p>2 / 14</p>
-</div>
-</div>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-6 right-10 text-gray-600">
+            <p>2 / 14</p>
+        </div>
+    </div>
 
-</body></html>
+</body>
+</html>

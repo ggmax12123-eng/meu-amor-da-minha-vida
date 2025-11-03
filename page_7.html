@@ -1,126 +1,151 @@
-<!DOCTYPE html><html lang="pt"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Com Você, Posso Ser Eu Mesmo</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script><style>
-        body {width: 1280px; min-height: 720px; overflow: hidden; font-family: 'Montserrat', sans-serif;
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Com Você, Posso Ser Eu Mesmo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&amp;display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            /* REMOVIDO: width: 1280px; */
+            /* MUDADO: min-height: 720px; para 100vh */
+            min-height: 100vh;
+            /* REMOVIDO: overflow: hidden; */
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
-            padding: 0;}
-        .slide {
-            width: 1280px;
-            min-height: 720px;
-            position: relative;
-            
+            padding: 0;
         }
+
+        .slide {
+            /* MUDADO: width: 1280px; para 100% */
+            width: 100%;
+            /* MUDADO: min-height: 720px; para 100vh */
+            min-height: 100vh;
+            position: relative;
+        }
+
         .floating {
             animation: floating 3s ease-in-out infinite;
         }
+
         @keyframes floating {
             0% {
                 transform: translateY(0px);
             }
+
             50% {
                 transform: translateY(-10px);
             }
+
             100% {
                 transform: translateY(0px);
             }
         }
+
         .pulse {
             animation: pulse 2s infinite;
         }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
             }
+
             50% {
                 transform: scale(1.1);
             }
+
             100% {
                 transform: scale(1);
             }
         }
+
         .fade-in {
             animation: fadeIn 1s ease-in-out;
         }
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
         }
-    
-html {
-    overflow: hidden;
-}</style>
+
+        html {
+            /* REMOVIDO: overflow: hidden; */
+        }
+    </style>
 </head>
+
 <body>
-<div class="slide bg-gradient-to-br from-pink-100 to-red-200 flex flex-col items-center justify-start p-12" style=" overflow: hidden;">
-<a href="page_6.html" class="absolute top-1/2 -translate-y-1/2 left-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
-    <i class="fas fa-chevron-left"></i>
-</a>
-<a href="page_8.html" class="absolute top-1/2 -translate-y-1/2 right-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
-    <i class="fas fa-chevron-right"></i>
-</a>
-<div class="w-full text-center mb-10">
-<h1 class="text-5xl font-bold text-red-600 tracking-wider">Com Você, Posso Ser Eu Mesmo</h1>
-<div class="w-32 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
-</div>
-<div class="flex flex-col items-center justify-center w-full">
-<div class="mb-10 text-center">
-<div class="inline-block rounded-full bg-white p-5 shadow-lg pulse">
-<i class="fas fa-heart text-pink-500 text-5xl"></i>
-</div>
-</div>
-<div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-lg w-3/4 text-center mb-10 fade-in">
-<p class="text-2xl font-light text-gray-800 italic">
+    <div class="slide bg-gradient-to-br from-pink-100 to-red-200 flex flex-col items-center justify-start p-12">
+        <a href="page_6.html" class="absolute top-1/2 -translate-y-1/2 left-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a href="page_8.html" class="absolute top-1/2 -translate-y-1/2 right-8 z-30 text-gray-600 text-4xl opacity-60 hover:opacity-100 transition-opacity duration-300">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+        <div class="w-full text-center mb-10">
+            <h1 class="text-5xl font-bold text-red-600 tracking-wider">Com Você, Posso Ser Eu Mesmo</h1>
+            <div class="w-32 h-1 bg-pink-400 rounded-full mx-auto mt-4"></div>
+        </div>
+        <div class="flex flex-col items-center justify-center w-full">
+            <div class="mb-10 text-center">
+                <div class="inline-block rounded-full bg-white p-5 shadow-lg pulse">
+                    <i class="fas fa-heart text-pink-500 text-5xl"></i>
+                </div>
+            </div>
+            <div class="bg-white bg-opacity-70 rounded-xl p-8 shadow-lg w-3/4 text-center mb-10 fade-in">
+                <p class="text-2xl font-light text-gray-800 italic">
                     &#34;Com você, posso ser totalmente eu, sem máscaras, sem medo de ser julgado.&#34;
                 </p>
-</div>
-<div class="grid grid-cols-3 gap-6 w-full">
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
-<div class="rounded-full bg-white p-3 mb-4 shadow">
-<i class="fas fa-user text-pink-500 text-2xl"></i>
-</div>
-<h3 class="text-xl font-semibold text-gray-800 mb-2">Autenticidade</h3>
-<p class="text-gray-700">
+            </div>
+            <div class="grid grid-cols-3 gap-6 w-full">
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="rounded-full bg-white p-3 mb-4 shadow">
+                        <i class="fas fa-user text-pink-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Autenticidade</h3>
+                    <p class="text-gray-700">
                         Ser ele mesmo com você é natural e confortável
                     </p>
-</div>
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
-<div class="rounded-full bg-white p-3 mb-4 shadow">
-<i class="fas fa-door-open text-pink-500 text-2xl"></i>
-</div>
-<h3 class="text-xl font-semibold text-gray-800 mb-2">Abertura</h3>
-<p class="text-gray-700">
+                </div>
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="rounded-full bg-white p-3 mb-4 shadow">
+                        <i class="fas fa-door-open text-pink-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Abertura</h3>
+                    <p class="text-gray-700">
                         Posso me abrir e compartilhar meus sentimentos verdadeiros
                     </p>
-</div>
-<div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
-<div class="rounded-full bg-white p-3 mb-4 shadow">
-<i class="fas fa-heart-broken text-pink-500 text-2xl"></i>
-</div>
-<h3 class="text-xl font-semibold text-gray-800 mb-2">Vulnerabilidade</h3>
-<p class="text-gray-700">
+                </div>
+                <div class="bg-pink-100 bg-opacity-80 rounded-lg p-6 shadow-md flex flex-col items-center text-center transform hover:scale-105 transition-transform duration-300">
+                    <div class="rounded-full bg-white p-3 mb-4 shadow">
+                        <i class="fas fa-heart-broken text-pink-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Vulnerabilidade</h3>
+                    <p class="text-gray-700">
                         Sem medo de julgamento, posso mostrar minha verdadeira pessoa
                     </p>
-</div>
-</div>
-<div class="mt-10 text-center">
-<p class="text-xl text-pink-700 font-medium">
-<i class="fas fa-quote-left text-sm align-top mr-1 opacity-70"></i>
+                </div>
+            </div>
+            <div class="mt-10 text-center">
+                <p class="text-xl text-pink-700 font-medium">
+                    <i class="fas fa-quote-left text-sm align-top mr-1 opacity-70"></i>
                     Em seu amor, encontrei a liberdade de ser completo
                     <i class="fas fa-quote-right text-sm align-top ml-1 opacity-70"></i>
-</p>
-</div>
-</div>
-<div class="absolute bottom-6 right-10 text-gray-600">
-<p>7 / 14</p>
-</div>
-</div>
+                </p>
+            </div>
+        </div>
+        <div class="absolute bottom-6 right-10 text-gray-600">
+            <p>7 / 14</p>
+        </div>
+    </div>
 
-</body></html>
+</body>
+</html>
